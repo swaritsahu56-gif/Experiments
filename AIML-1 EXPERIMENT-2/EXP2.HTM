@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee management system</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main{
+    width: 50%;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    background-color: aquamarine;
+    color: #333;
+}
+button{
+    background-color: #3941df;
+    color: white;
+    padding: 10px;
+    size: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <main>  
+          <h1>Employee Management system</h1>
+    <form action="#">
+        <input type="text" id="name" placeholder="Name"><br><br>
+        <input type="text" id="empId" placeholder="Employee ID"><br><br>
+        <input type="number" id="salary" placeholder="Salary"><br><br>
+        <input type="text" id="department" placeholder="Department"><br><br>
+        <button type="button" onclick="addEmployee()">Add Employee</button>
+        <button onclick="displayEmployees()">Display Employees</button>
+        <button onclick="filtersalary()">Filter by Salary(>50000)</button>
+        <button onclick="totalSalary()">Total Salary</button>
+        <button onclick="averageSalary()">Average Salary</button>
+        <button onclick="countDepartment()">Count by Department</button>
+    </form>
+    <div id="output"></div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
